@@ -22,4 +22,4 @@ legcrypt/CLegCrypt.cpp
 legcrypt/CData.cpp 
 )
 
-target_link_libraries(leg lua)
+#target_link_libraries(leg lua)
