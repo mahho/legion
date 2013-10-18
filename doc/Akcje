@@ -1,0 +1,8 @@
+Brak akcji = 0
+Akcja w terenie = 1 // pobieramy tylko dane legion1
+Polowanie = 2       // pobieramy legion1; legion2 generujemy ze zwierzakow
+Walka dwoch legionow = 3 // pobieramy dane legionu1 i legionu2; jesli w miescie, pobieramy miasto, jesli nie, to nie
+Bitwa o miasto = 4  // pobieramy legion1; legion2 generujemy; pobieramy miasto
+Przygoda = 5        // pobieramy legion1; legion2 generujemy; pobieramy dane dla przygody
+
+

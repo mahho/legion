@@ -1,0 +1,30 @@
+Typy okien
+- INFO_LEGION - okno informacyjne dla legionu (w tym przyciski Rozkazy i OK)
+- INFO_CITY - okno informacyjne dla miasta (w tym przyciski Rozkazy [jesli gracz jest wlascicielem miasta] i OK)
+- INFO_QUEST - okno informacyjne dla przygody (tylko OK)
+- INFO - okno informacyjne (typu zaatakowali nas bandyci, czy pozar w miescie X) (tylko OK)
+- INFO_STATS - okno informacyjne ze statystykami  (tylko OK)
+- INTELL - okno dla wywiadu (Gora/dol dla kasy, OK, Anuluj)
+- TAXES - okno dla podatkow (j.w)
+- RECRUITMENT - okno do rekrutacji wojownikow (tu nie pameitam, musze zobaczyc do gry)
+- OPTIONS_MENU - okno z opcjami (i tu tez)
+- LEGION_ORDERS_MENU - okno z rozkazami dla legionu (tu tez)
+- CITY_ORDERS_MENU - okno z rozkazami dla miasta (no i tu :P)
+
+
+CButton - obiekt przycisku dla okien/GUI
+CButton - pozycja x/y + szerokosc/wysokosc + tekst
+
+
+
+
+CGraphic - nadrzedny + event receiver
+CMapGui - gui dla mapy (Mapa [w tym legiony i miasta], Start/Opcje, okna wyskakujace, menu wszelkie)
+CMapGui -> getMap(); -- pobiera wyggenerowana mape
+CMapGui -> getWindows() - wektor ze wszystkimi oknami wyswietlajacymi sie aktualnie1
+CMapGui -> clicked(x, y) - CMapGui sprawdza gdzie bylo klikniecie i wykonuje odpowiednia akcje
+CInventoryGui - gui dla ekwipunku (w tym clicked(x,y) itp)
+CShopGui - gui dla sklepow (j/w)
+CTalkGui - gui dla rozmow (j/w)
+
+CWindow - ogolnie dla okien (z ramkami, czy bez, polozenie, itp)

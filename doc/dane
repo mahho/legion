@@ -1,0 +1,14 @@
+Mapa glowna
+    [v] wektor miast - getCity()
+	- string getName() - nazwa miasta
+	- int getTax() - podatek
+	[v] wektor Budynkow - getBuildings()
+	    - int getType() - typ budynku
+	    
+    [v] wektor legionow - getLegions()
+	- Point getPosition() - pozycja
+	- Point getOldPosition() - poprzednia pozycja po ruchu
+	[v] Aktorzy w legionach - getActors()
+	    - std::string getName() - imie
+	    - ...
+

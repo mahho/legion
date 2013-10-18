@@ -1,0 +1,34 @@
+- Master
+    // Na Glownej Mapie
+    - myPlayer
+	- myLegions // wyswietlamy na mapie
+	    - myActors
+	- myActionsQueue // kolejka 
+	
+    - myAi
+	- myLegions // wyswietlamy na mapie
+	    - myActions // kolejka
+	    - myActors
+    - myCity // wyswietlamy na mapie
+    
+    *Kolejka akcji*
+    // mamy akcje? zmieniamy grafike
+    myPlayer 
+	- countActionsQueue() { return myActionCount; } // sprawdzamy ile akcji
+	{loop}
+	    // pobieramy potrzebne dane
+	    // wchodzimy w akcje
+	    // akcja akcja
+	    // konczymy i wyswietlamy mape
+	{/loop}
+    myAi
+	- countActionsQueue() { ...}
+	{loop}
+	    // pobieramy potrzebne dane
+	    // jesli nie ma udzialu gracza, symulujemy
+	    // jesli ma udzial gracz, wchodzimy w akcje
+	    // akcja akcja
+	    // konczymy i wyswietlamy mape
+	{/loop}
+	
+

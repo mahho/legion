@@ -1,0 +1,7 @@
+Przykladowo
+
+ID|Nazwa rasy|Energia|Sila|Szybkosc|Magia|
+1|Czlowiek|25|25|25|25|
+
+Nalezy pamietac ze na koncu musi byc | bo inaczej bedzie sie sypac!
+Druga sprawa, na koncu pliku nie moze byc nowej linii z pustymi danymi, bo tez sie wypierdzieli

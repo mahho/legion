@@ -1,0 +1,18 @@
+libleg:
+    -> CMainMap - mapa glowna ([lista: miasta], [lista: legiony])
+    -> CLegion - legion (pozycja na mapie, cel x:y,  numer_id, ilosc_zarcia, [lista: aktorzy])
+    -> CActor - aktorzy (NPC, nr_legionu, typ_jednostki, statystyki, [sub: przedmioty])
+    -> CCity - miasto (taxes, population, [lista: budynki])
+    -> CBuilding - budynek (typ, ?)
+    -> CItem - przedmioty (typ, atak, obrona)
+    -> CAction - akcja w terenie (type, legion_id, [second_legion_id], [city_id], terrain_type)
+    
+    -> CPlayer - klasa gracza (id, treasure)
+
+
+
+
+MainMap 
+    -> Legiony
+	-> Aktorzy
+    -> Miasta

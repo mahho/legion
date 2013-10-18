@@ -1,0 +1,14 @@
+id
+a  b  c 
+97 98 99
+
+116 97 106 110 101
+
+
+supertajnyklucz
+
+(int)litera xor (int)ktoras_litera_z_klucza-97 = (char)zxorowana_litera
+
+Trzeba sprawdzic maksymalna literke z ascii
+
+Co z polskimi znakami?

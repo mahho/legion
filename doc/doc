@@ -1,0 +1,82 @@
+Petla - 
+    Oczekiwanie na start
+	-> Start 
+	    -> Ruch legionów
+	    -> Sprawdzanie kolizji legionow
+	    -> Sprawdzanie czy jakis legion nie trafil na 'event specjalny' na mapie
+	    -> Losowanie legionom wydarzen losowych, jesli nie trafili na powyzsze
+	    -> Dodawanie podatkow z miast do skarbca
+
+Gracz (NPC/Gracz)
+    -> Zloto
+    
+Legion (ilosc nieskonczona)
+    -> Postac [aktor] (1-10 na druzyne)
+	-> Ekwipunek
+	-> Statystyki
+    -> Rozkazy
+	-> Ruch
+	-> Szybki ruch
+	-> Polowanie
+	-> Rekrutacja
+	-> Oboz
+	-> Ekwipunek
+	-> Akcja w terenie
+	
+Mapa glowna
+    -> Legiony
+	-> Ruch
+    -> Miasta
+    -> Miejsca specjalne
+
+"Akcja w terenie"
+    -> Miasto
+	-> Budynki
+	-> NPC
+    -> Poza miastem
+	-> Wydarzenie losowe
+	-> Wydarzenie specjalne
+    -> Walka dwoch legionow
+
+
+Budynek
+    -> Typ
+    -> Polozenie
+    
+- Typy akcji w terenie
+    -> Bitwa
+    -> Zwiedzanie
+
+- Opcje dla aktora podczas akcji w terenie
+    -> Rozmowa
+    -> Atak - walka wrecz
+    -> Atak - bron dystansowa
+    -> Atak czarem
+    -> Ucieczka
+
+- Opcje dla miast
+    -> Podatki
+    -> Nowy legion
+    -> Rozbudowa
+    -> Budowa murów
+    -> Exit
+    
+-- Dodatki
+    - Wyswietlanie za ile legion bedzie na miejscu
+    - Ilosc zarcia w legionie
+
+-- Opcje podczas gry
+    - Odczyt gry
+    - Zapis gry
+    - Statystyki
+    - Preferencje
+    - Koniec gry
+    - Wyjscie [exit]
+    
+--- Statystyki
+    Raport na dzien: X
+    W twoim wladaniu:
+    X legion(ów), X wojownik(ów)
+    X miast, x mieszkancow
+    Dzienny dochod: X
+    W skarbcu: X

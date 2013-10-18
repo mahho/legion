@@ -1,0 +1,48 @@
+
+
+- MainMap:
+    - Wrzuca miasta
+    - Wrzuca graczy
+	- Gracze tworza legiony i nimi zarzadzaja
+	    - Legiony sie ruszaja i biora udzial w AKCJI W TERENIE
+	- Gracze zarzadzaja miastami
+	
+    - Wlacza nowy dzien po dostaniu nowa tura
+    
+
+MainMap ->
+    Zwraca liste legionow (ich pozycje, itp)
+    Zwraca liste miast (ich pozycje, nazwe, dane, itp)
+
+Akcja w terenie ->
+    To juz dzieje sie po graficznej stronie 
+    Typ akcji w terenie:
+    - Akcja w miescie (potrzebujemy danych: legion, miasto, teren)
+    - Akcja poza miastem (wymagane dane: legion, teren)
+    - Polowanie (wmagane dane: legion, teren, zwierzyna)
+    - Przygoda (wymagane dane: legion, teren, dane w zalezosci od przygody)
+    - Walka legionow (wymagane dane: legion1, legion2, teren)
+    - Bitwa o miasto (wymagane dane: legion1, miasto, teren)
+    - Walka legionow w miescie (wymagane dane: legion1, legion2, miasto, teren)
+    
+
+No to odpalamy gre
+    Ladnie wszystko smiga, legiony chodza po mapie, komp sobie podbija miasta (symulacja akcji w terenie), 
+    po czym gracz postanawia polowac, po kilku turach ma akcje w terenie
+    Akcja w terenie, walka itp itd, po czym koniec akcji
+    
+
+Obiekt akcja w terenie przetrzymuje kolejke zdarzen, po czym glowna petla gry pobiera sobie dane jaka akcja itp itd i je wyswietla (dla gracza)
+
+
+
+Tura 
+    - Pobieramy zarcie z legionow, bez wyjatku
+    - Dodajemy podatki 
+    - [NPC] W zaleznosci od rozkazu, wykonujemy symulacje dla kompa
+    - [Gracz] W zaleznosci od rozkazu, wykonujemy akcje w terenie (zmiana grafiki, itp)
+    
+Game - 
+    pobiera sobie dane z libleg i wyswietla co trzeba
+    - pobierz kolejke akcji (jesli akcja, to zmieniamy grafike i pobieramy dodatkowe dane [typ akcji, w zaleznosci od typu to legion2, czy typ przygody]
+    
